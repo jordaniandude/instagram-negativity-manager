@@ -17,7 +17,6 @@ negativity_check_counter = 0
 def get_my_posts():    
     posts_list = []
 
-    # 17841468212224831?fields=business_discovery.username(tariqelouzeh){followers_count,media_count,media}
     endpoint = f"/{secret.instagram_user_id}?fields=business_discovery.username(tariqelouzeh){{followers_count,media_count,media}}"
     params = {
         'access_token': secret.instagram_api_token,
